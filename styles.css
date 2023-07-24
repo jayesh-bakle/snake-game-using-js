@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@600&family=Qwitcher+Grypen&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    background-image: url('snake3.jpeg'); 
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+    background-clip: border-box;
+    background-size: 100vw 100vh;
+    image-rendering: pixelated; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+#board{
+    /* background-color:greenyellow; */
+    background-image: linear-gradient(rgb(46, 246, 206), rgb(193, 193, 24),rgb(180, 98, 172), rgb(93, 145, 160));
+    width: 75vmin;
+    height: 83vmin;
+    border: 4px solid ;
+    border-color:rgb(105, 86, 231);
+    display: grid;
+    box-shadow: black 10px 20px 50px;
+    grid-template-rows: repeat(21,1fr);
+    /* here we have created 21 rows as the grids in the board. */
+    grid-template-columns: repeat(21,1fr);
+     /* here we have created 21 columns as the grids in the board. */
+}
+
+.head{
+    background-color:rgb(0, 255, 17) ;
+    border: 2px solid whitesmoke;
+    transform: scale(1.04);
+    border-radius: 8px;
+}
+.snake{
+    background-color: red;
+    border: 0.25vmin solid white;
+    border-radius : 10px; ;
+}
+.food{
+    background-color: purple;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+#scoreBox{
+    position: absolute;
+    top: 2vh;
+    right: 5vh;
+    font-size: 39px;
+    font-weight: bolder;
+    font-family: 'Edu QLD Beginner', cursive;
+    color: indigo;
+}
+#highscoreBox{
+    position: absolute;
+    top: 9vh;
+    right: 5vh;
+    font-size: 39px;
+    font-weight: bolder;
+    font-family: 'Edu QLD Beginner', cursive;
+    color: indigo;
+}
